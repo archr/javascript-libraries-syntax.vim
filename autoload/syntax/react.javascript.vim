@@ -16,6 +16,10 @@ syntax keyword javascriptRComponent contained isMounted setProps replaceProps
 
 syntax cluster javascriptRProp      contains=javascriptRTop,javascriptRComponent
 
+" react 0.13.0
+syntax keyword javascriptRTop contained Component createElement cloneElement createFactory
+"
+
 
 " Define the default highlighting.
 " For version 5.7 and earlier: only when not done already
