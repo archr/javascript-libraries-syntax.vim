@@ -14,11 +14,13 @@ syntax keyword javascriptRTop contained initializeTouchEvents Children map forEa
 syntax keyword javascriptRComponent contained setState replaceState forceUpdate getDOMNode
 syntax keyword javascriptRComponent contained isMounted setProps replaceProps
 
-syntax cluster javascriptRProp      contains=javascriptRTop,javascriptRComponent
-
 " react 0.13.0
 syntax keyword javascriptRTop contained Component createElement cloneElement createFactory
+syntax keyword javascriptRLifeCycle componentDidMount componentWillUnmount componentDidUpdate componentWillUpdate
+syntax keyword javascriptRLifeCycle shouldComponentUpdate componentWillReceiveProps componentWillMount
 "
+
+syntax cluster javascriptRProp contains=javascriptRTop,javascriptRComponent,javascriptRLifeCycle
 
 
 " Define the default highlighting.
